@@ -41,8 +41,6 @@
 function menFromBoys(arr) {
     let menArray = [];
     let boysArray = [];
-    let newArray = [];
-
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 === 0) {
             menArray.push(arr[i]);
@@ -52,8 +50,5 @@ function menFromBoys(arr) {
             boysArray.sort((a, b) => b - a);
         }
     }
-    console.log(`menArray: ${menArray}`);
-    console.log(`boysArray: ${boysArray}`);
-    console.log(`newArray: ${newArray}`);
-    return (newArray = Array.from(new Set(menArray.concat(boysArray))));
+    return Array.from(new Set(menArray.concat(boysArray)));
 }
