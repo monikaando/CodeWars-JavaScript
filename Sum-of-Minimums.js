@@ -22,3 +22,4 @@ function sumOfMinimums(arr) {
   }
 return sumRow
 }
+console.log(sumOfMinimums([[7, 3, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
