@@ -7,6 +7,21 @@
 // If either input is an empty string, consider it as zero.
 
 function sumStr(a,b) {
-  var sum=(parseInt(a) + parseInt(b))
-  return sum.toString()
+  if(a =="" && b ==""){
+    return "0"
+  }
+  else if (b==""){
+    return a
+  }
+  else if(a ==""){
+  return b
+  }
+  else if(a !=="" && b!==""){
+    return (parseInt(a) + parseInt(b)).toString()
+  }
 }
+
+//short version
+// function sumStr(a,b) {
+//   return String(Number(a)+Number(b));
+// }
